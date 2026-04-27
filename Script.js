@@ -21,6 +21,9 @@ const formDaftar = document.getElementById("formDaftar");
 if (formDaftar) {
     formDaftar.addEventListener("submit", function (event) {
         event.preventDefault();
-        
+
+        const namaInput = document.getElementById("nama").value;
+        const emailInput = document.getElementById("email").value;
+        const minatInput = document.getElementById("minat").value;
     });
 }
