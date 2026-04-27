@@ -25,5 +25,10 @@ if (formDaftar) {
         const namaInput = document.getElementById("nama").value;
         const emailInput = document.getElementById("email").value;
         const minatInput = document.getElementById("minat").value;
+
+        dataAnggota.push({
+            nama: namaInput,
+            usia: "Baru", 
+            minat: minatInput
     });
 }
