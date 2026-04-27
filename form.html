@@ -61,11 +61,37 @@
             </nav>
         </div>
     </header>
-    <h1 style="text-align: center;">Silahkan isi identitas anda disini</h1>
-    <input type="text" name="name" id="nama">
-    <input type="text" name="email" id="email">
-    <select name="bidang minat" id="bidang minat"></select>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-container">
+                <h1 class="text-center mb-4" style="color: var(--primary-brown);">Form Pendaftaran</h1>
+                <p class="text-center text-muted small mb-4">Silahkan Isi Identitas Anda Di Bawah Ini</p>
 
+                <form id="formDaftar">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Anda" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Masukkan Email Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label for="bidangMinat" class="form-label">Bidang Minat</label>
+                        <select class="form-select" id="bidangMinat" name="bidang_minat">
+                            <option value="">Pilih Bidang Minat</option>
+                            <option value="web">Pengembangan Web</option>
+                            <option value="mobile">Pengembangan Mobile</option>
+                            <option value="data">Analisis Data</option>
+                            <option value="ai">Kecerdasan Buatan</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-custom">Daftar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
     <form action="form.html"></form>
     <button type="submit" ; style="text-align: left; height: 27px; width: 25px; "></button>
 </body>
