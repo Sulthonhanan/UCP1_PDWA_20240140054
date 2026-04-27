@@ -50,5 +50,9 @@ function playAudio() {
 }
 
 function stopAudio() {
-    
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0; // Kembalikan ke awal
+        console.log("Audio dihentikan");
+    }
 }
