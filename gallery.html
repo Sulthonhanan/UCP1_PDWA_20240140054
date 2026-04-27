@@ -73,6 +73,7 @@
             border-radius: 10px;
             height: 100%;
             background: #fff;
+            transition: 0.3s;
         }
 
         .btn-custom {
@@ -108,7 +109,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="media-box text-center">
-                        <p class="fw-bold">Gambar</p>
+                        <h6 class="fw-bold">Gambar</h6>
                         <img src="cyber.png" alt="Cyber Security" class="img-fluid rounder mb-3" style="max-height: 200px;">
                         <br>
                     </div>
@@ -117,15 +118,26 @@
 
             <div class="col-md-4">
                 <div class="media-box text-center">
-                    <p class="fw-bold">Video Edukasi</p>
-                    <div class="ratio ratio-16x9">
-                         <iframe src="video.mp4" frameborder="0" allowfullscreen class="img-fluid rounder mb-3" style="max-height: 200px;"></iframe>
+                    <h6 class="fw-bold">Video Edukasi</h6>
+                    <div class="ratio ratio-16x9 mb-3">
+                         <iframe src="video1.mp4" frameborder="0" allowfullscreen class="img-fluid rounder mb-3" style="max-height: 200px;"></iframe>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="media-box text-center">
+                    <p class="fw-bold">Audio Edukasi</p>
+                    <audio src="audio1.mp3" controls class="img-fluid rounder mb-3" style="max-height: 200px;"></audio>
+                   <div class="d-flex justify-content-center gap-2">
+                        <button onclick="playAudio()" class="btn-custom">Play</button>
+                        <button onclick="stopAudio()" class="btn-custom">Stop</button>
+                   </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <iframe src="" frameborder="1">ini video</iframe>
-    <audio src=""></audio>
+
     <a href="./index.html"></a>
 </body>
 
