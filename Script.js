@@ -56,3 +56,5 @@ function stopAudio() {
         console.log("Audio dihentikan");
     }
 }
+
+window.onload = tampilkanData;
