@@ -4,5 +4,15 @@ let dataAnggota = [
 
 function tampilkanData() {
     const tabel = document.getElementById("isiTabel");
-    
+    if (tabel) {
+        tabel.innerHTML = ""; 
+        dataAnggota.forEach((anggota) => {
+            let row = `<tr>
+                <td>${anggota.nama}</td>
+                <td>${anggota.usia}</td>
+                <td>${anggota.minat}</td>
+            </tr>`;
+            tabel.innerHTML += row;
+        });
+    }
 }
