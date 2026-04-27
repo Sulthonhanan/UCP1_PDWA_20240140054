@@ -16,3 +16,11 @@ function tampilkanData() {
         });
     }
 }
+
+const formDaftar = document.getElementById("formDaftar");
+if (formDaftar) {
+    formDaftar.addEventListener("submit", function (event) {
+        event.preventDefault();
+        
+    });
+}
