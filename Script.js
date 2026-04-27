@@ -48,3 +48,7 @@ function playAudio() {
         console.log("Audio dimainkan");
     }
 }
+
+function stopAudio() {
+    
+}
