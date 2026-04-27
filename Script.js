@@ -39,3 +39,12 @@ if (formDaftar) {
         console.log("Data Terbaru:", dataAnggota);
     });
 }
+
+const audio = document.getElementById("myAudio");
+
+function playAudio() {
+    if (audio) {
+        audio.play();
+        console.log("Audio dimainkan");
+    }
+}
