@@ -33,4 +33,9 @@ if (formDaftar) {
     });
 
     alert("Terima kasih " + namaInput + "! Data Anda berhasil disimpan ke komunitas.");
+
+    formDaftar.reset();
+        
+        console.log("Data Terbaru:", dataAnggota);
+    });
 }
