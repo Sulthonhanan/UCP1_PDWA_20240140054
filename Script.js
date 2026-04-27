@@ -31,4 +31,6 @@ if (formDaftar) {
             usia: "Baru", 
             minat: minatInput
     });
+
+    alert("Terima kasih " + namaInput + "! Data Anda berhasil disimpan ke komunitas.");
 }
